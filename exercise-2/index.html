@@ -1,0 +1,22 @@
+<script src="https://npmcdn.com/vue/dist/vue.js" xmlns:v-on="http://www.w3.org/1999/xhtml"></script>
+<div id="exercise">
+    <!-- 1) Show an alert when the Button gets clicked -->
+    <div>
+        <button v-on:click="showAlert">Show Alert</button>
+    </div>
+    <!-- 2) Listen to the "keydown" event and store the value in a data property (hint: event.target.value gives you the value) -->
+    <div>
+        <input type="text" v-on:keydown="updateText($event)">
+        <p>{{ value }}</p>
+
+        <input type="text" v-on:keydown="value = $event.target.value">
+        <p>{{ value }}</p>
+    </div>
+
+
+    <div>
+        <input type="text" v-on:keydown.enter="updateText($event)">
+        <p>{{ value }}</p>
+    </div>
+</div>
+<script src="app.js"></script>

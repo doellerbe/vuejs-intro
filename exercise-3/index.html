@@ -1,0 +1,15 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+<div id="exercise">
+    <div>
+        <p>Current Value: {{ value }} | Current Target Value: {{ targetValue }}</p>
+        <button @click="value += 5">Add 5</button>
+        <button @click="value += 1">Add 1</button>
+        <p>Are we there, yet?! {{ result }}</p>
+    </div>
+    <div>
+        <p></p>
+        <p>Update the Target Value:</p>
+        <input type="text" v-model="targetValue">
+    </div>
+</div>
+<script src="app.js"></script>
