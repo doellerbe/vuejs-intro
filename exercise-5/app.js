@@ -17,7 +17,7 @@ new Vue({
             return {
                 name: "dorian",
                 age: 29,
-                job: "dev"
+                job: "software engineer"
             }
         }
     }
